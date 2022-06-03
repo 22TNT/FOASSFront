@@ -77,15 +77,15 @@ function submit(event)
             'Accept': 'application/json'
         },
     }).then(response => response.json()).then(data => message = data).then(() => {
-        let newDiv = document.createElement("div");
+        let newDiv = document.createElement("li");
         let messageLabel = document.createElement("label");
         let subLabel = document.createElement("label");
 
         messageLabel.textContent = message.message;
-        messageLabel.class = "content";
+        messageLabel.classList.add("content");
         subLabel.textContent = " -"+message.subtitle;
-        subLabel.class = "subtitle";
-        newDiv.class = "messages"
+        subLabel.classList.add("subtitle");
+        newDiv.classList.add("messages");
 
         newDiv.appendChild(messageLabel);
         newDiv.appendChild(subLabel);
