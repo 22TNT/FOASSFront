@@ -93,7 +93,6 @@ function submit(event)
         output.appendChild(newDiv);
     });
 
-    console.log(url);
     return false;
 }
 

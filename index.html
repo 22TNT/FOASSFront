@@ -3,34 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>API</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
 </head>
 <body>
     <div class="container">
-        <div class="formdiv">
-            <form action="" id="inputForm">
-                <label>
-                    <input type="checkbox" id="shoutcloud">
-                    Enable SHOUTCLOUD integration
-                </label>
+        <div class="window" style="margin: 32px; width: 700px">
+            <div class="title-bar">
+                <div class="title-bar-text">
+                    Fuckity-fuckoffer 3000
+                </div>
+
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <div class="formdiv">
+                    <form action="" id="inputForm">
+                        <input type="checkbox" id="shoutcloud">
+                        <label for="shoutcloud">
+                            Enable SHOUTCLOUD integration
+                        </label>
+                        <br>
+                        <label>
+                            Select language:
+                        </label>
+                        <select size="1" id="lang">
+                            <option selected value="en">English</option>
+                            <option value="ru">Russian</option>
+                            <option value="uk">Ukrainian</option>
+                        </select>
+                        <br>
+                        <label>
+                            Select operation:
+                        </label>
+                    </form>
+                </div>
                 <br>
-                <label>
-                    Select language:
-                </label>
-                <select size="1" id="lang">
-                    <option selected value="en">English</option>
-                    <option value="ru">Russian</option>
-                    <option value="uk">Ukrainian</option>
-                </select>
-                <br>
-                <label>
-                    Select operation:
-                </label>
-            </form>
-        </div>
-        <br>
-        <div class="output">
-        </div>
+                <div class="output">
+                </div>
+            </div>
+            </div>
     </div>
 </body>
 
