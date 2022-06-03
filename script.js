@@ -46,10 +46,7 @@ fetch('https://www.foaas.com/operations')
 
 function submit(event)
 {
-    if (event.preventDefault())
-    {
-        event.preventDefault();
-    }
+    event.preventDefault();
 
     if (opSelector.value === "default")
     {
