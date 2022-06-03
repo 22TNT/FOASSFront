@@ -2,6 +2,7 @@ const form = document.querySelector('#inputForm');
 const lang = document.querySelector('#lang');
 const shoutcloud = document.querySelector('#shoutcloud');
 const output = document.getElementsByClassName("output")[0];
+const spinner = document.querySelector('#spinner');
 
 let fields = document.createElement('div');
 let selectButton = document.createElement('button');
@@ -55,6 +56,7 @@ function submit(event)
         alert("Select the operation!");
         return false;
     }
+    spinner.removeAttribute("hidden");
 
     let url = 'https://www.foaas.com';
     url += opSelector.value;
@@ -90,6 +92,7 @@ function submit(event)
 
         newDiv.appendChild(messageLabel);
         newDiv.appendChild(subLabel);
+        spinner.setAttribute("hidden", "hidden");
         output.appendChild(newDiv);
     });
 
